@@ -1,0 +1,27 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  background: $grey-lighter;
+  padding: 16px 16px 0 16px;
+  min-height: 40px;
+    .menu{
+      .menu__list{
+        list-style: none;
+          .menu__item{
+            display: inline-block;
+            position:relative;
+            padding: 8px;
+              > a:not(.button), span {
+                text-decoration: none;
+                color: rgb(69,77,86);
+                line-height: 18px;
+              }
+          }
+          .menu__item--active{
+            @extend .menu__item;
+          
+            color:$white;
+          }
+      }
+    }
+}
