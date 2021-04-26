@@ -1,5 +1,7 @@
 @import 'variables.scss';
 
+@import 'help.scss';
+
 @import 'components/cards.scss';
 
 @import 'elements/container.scss';
@@ -25,7 +27,7 @@ body {
   padding: 4rem  1rem;
   margin:0;
   clear: both;
-  background: $white-ter;
+  background: $grey-lighter;
   .title{
     color: rgb(69,77,86);
   }
@@ -42,7 +44,6 @@ main{
 
 .row {
   display:flex;
-  justify-content: space-between;
   margin: -1rem;
   &.is-multiline{
     flex-wrap: wrap;

@@ -1,3 +1,11 @@
+.card .name-site {
+  background-color: #757d88;
+  padding: 20px;
+  display: none; }
+
+.card:hover .name-site {
+  display: block; }
+
 .card {
   position: relative;
   display: block;
@@ -146,7 +154,7 @@ body {
   padding: 4rem  1rem;
   margin: 0;
   clear: both;
-  background: #F5F7FA; }
+  background: #CAD0D9; }
   .hero .title {
     color: #454d56; }
   .hero .subtitle {
@@ -158,7 +166,6 @@ main {
 
 .row {
   display: flex;
-  justify-content: space-between;
   margin: -1rem; }
   .row.is-multiline {
     flex-wrap: wrap; }

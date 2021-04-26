@@ -1,0 +1,13 @@
+.card{
+    .name-site{
+        
+        background-color: $grey;
+        padding: 20px;
+        display: none;
+    }
+}
+.card:hover{
+    .name-site{
+        display: block;
+    }
+}
