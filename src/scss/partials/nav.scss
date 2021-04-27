@@ -1,7 +1,7 @@
 .header{
   display: flex;
   justify-content: space-between;
-  background: $grey-lighter;
+  background: #2a4758;
   padding: 16px 16px 0 16px;
   min-height: 40px;
     .menu{
@@ -13,7 +13,7 @@
             padding: 8px;
               > a:not(.button), span {
                 text-decoration: none;
-                color: rgb(69,77,86);
+                color: rgb(255, 255, 255);
                 line-height: 18px;
               }
           }
