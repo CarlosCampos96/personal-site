@@ -21,6 +21,8 @@ body {
   align-items: stretch;
   min-height: 100vh;
   letter-spacing: .05rem;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  
 }
 
 .hero {
@@ -36,6 +38,9 @@ body {
   }
 }
 
+h1 {
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+}
 
 main{
   width: 1100px;
