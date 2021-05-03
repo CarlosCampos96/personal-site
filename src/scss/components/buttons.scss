@@ -1,0 +1,131 @@
+$button-border: 1px solid transparent;
+$button-border-hover: 1px solid transparent;
+$button-text-color: $white;
+
+.buttons {
+  display: flex;
+  margin-top: 16px;
+
+  &.is-aligned-right {
+    justify-content: flex-end;
+  }
+  &.is-spaced-between {
+    justify-content: space-between;
+  }
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  
+
+  color: $button-text-color;
+  background-color: $grey-darker;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &.is-fullwidth {
+    width: 100%;
+  }
+
+  &.is-large {
+    font-size: 20px;
+  }
+
+  /*
+    Button white
+  */
+
+  &.is-white {
+    background-color: $white;
+    color: #333;
+    &:hover {
+      cursor: pointer;
+      background: darken($white, 10%);
+    }
+  }
+
+  /*
+    Button primary
+  */
+
+  &.is-primary {
+    background-color: $primary;
+    &:hover {
+      cursor: pointer;
+      background: darken($primary, 10%);
+    }
+  }
+
+  /*
+    Button success
+  */
+
+  &.is-success {
+    background-color: $success;
+    &:hover {
+      cursor: pointer;
+      background: darken($success, 10%);
+    }
+  }
+  &.is-light {
+    background-color: $aqualight;
+    color: $dark;
+    &:hover {
+      cursor: pointer;
+      background: darken($aqualight, 10%);
+    }
+  }
+
+  &.is-aqualight {
+    background-color: $aqualight;
+    color: $success;
+    &:hover {
+      cursor: pointer;
+      background-color: $success;
+      color: $white;
+    }
+  }
+
+  &.is-info {
+    background-color: $info;
+    border-color: darken($info, 10%);
+
+    &:hover {
+      cursor: pointer;
+      background: darken($info, 10%);
+    }
+  }
+
+  &.is-danger {
+    background-color: $danger;
+    &:hover {
+      cursor: pointer;
+      background: darken($danger, 10%);
+    }
+  }
+
+  /*
+    Button warning TODO
+  */
+
+  &.is-warning {
+    background-color: $warning;
+    &:hover {
+      cursor: pointer;
+      background: darken($warning, 10%);
+    }
+  }
+}
+
+/*
+ Page specific styles, not to be used in component
+*/
+
+.buttons-page code {
+  float: right;
+  line-height: 42px;
+}

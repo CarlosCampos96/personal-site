@@ -1,8 +1,10 @@
 @import 'variables.scss';
+@import 'projects.scss';
 
 @import 'help.scss';
 
 @import 'components/cards.scss';
+@import 'components/buttons.scss';
 
 @import 'elements/container.scss';
 @import 'elements/title.scss';
@@ -72,6 +74,7 @@ main{
     }
   }
   .column{
+    display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
     padding: 16px;

@@ -12,6 +12,116 @@
 .card:hover .name-site {
   opacity: 0.7; }
 
+.width--6r {
+  width: 100px; }
+
+.is-flex {
+  display: flex; }
+
+.has-background-grey-lighter {
+  background-color: #CAD0D9 !important; }
+
+.tags {
+  display: flex; }
+
+.tag {
+  padding: 8px;
+  height: 15px;
+  font-weight: 600; }
+  .tag:not(.is-separator) {
+    border-radius: 8px; }
+  .tag.is-primary {
+    background-color: #FF7A5C;
+    color: #fff; }
+  .tag.is-aqualight {
+    color: #00C092;
+    background: #c9f7f4; }
+  .tag.is-yellow {
+    background-color: #FBBB24;
+    color: #000; }
+  .tag.is-black {
+    background-color: #00071D;
+    color: white; }
+  .tag.is-separator {
+    padding-right: 10px;
+    overflow: hidden; }
+    .tag.is-separator:after {
+      content: " ";
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-51%) rotate(45deg);
+      background-color: black; }
+
+.has-background-white {
+  background-color: white !important; }
+
+.icon {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px; }
+  .icon i {
+    display: block; }
+  .icon.is-hoverable {
+    cursor: pointer;
+    transition: .2s ease; }
+  .icon.is-green {
+    color: #00C092;
+    background: #E2F1F2; }
+    .icon.is-green.is-hoverable:hover {
+      background: #00C092;
+      color: #E2F1F2; }
+  .icon.is-red {
+    color: #F4253B;
+    background: #F6E2E3; }
+    .icon.is-red.is-hoverable:hover {
+      background: #F4253B;
+      color: #F6E2E3; }
+  .icon.is-blue {
+    color: #3297c2;
+    background: #EDF1E9; }
+    .icon.is-blue.is-hoverable:hover {
+      background: #3297c2;
+      color: #EDF1E9; }
+
+.has-text-uppercase {
+  text-transform: uppercase !important; }
+
+.has-text-grey {
+  color: #757d88 !important; }
+
+.has-text-black {
+  color: #00071D !important; }
+
+.has-text-green {
+  color: #00C092 !important; }
+
+.has-text-white {
+  color: white !important; }
+
+.has-text-size-1 {
+  font-size: 3rem !important; }
+
+.has-text-size-2 {
+  font-size: 2.5rem !important; }
+
+.has-text-size-3 {
+  font-size: 2rem !important; }
+
+.has-text-size-4 {
+  font-size: 1.5rem !important; }
+
+.has-text-size-5 {
+  font-size: 1.25rem !important; }
+
+.has-text-size-7 {
+  font-size: 1rem !important; }
+
+.has-text-size-7 {
+  font-size: 0.85rem !important; }
+
 .card {
   position: relative;
   display: block;
@@ -22,6 +132,91 @@
   .card .card-content {
     padding: 32px;
     box-sizing: border-box; }
+
+.buttons {
+  display: flex;
+  margin-top: 16px; }
+  .buttons.is-aligned-right {
+    justify-content: flex-end; }
+  .buttons.is-spaced-between {
+    justify-content: space-between; }
+
+.button {
+  display: inline-block;
+  border: none;
+  color: white;
+  background-color: #3E5460;
+  text-decoration: none;
+  /*
+    Button white
+  */
+  /*
+    Button primary
+  */
+  /*
+    Button success
+  */
+  /*
+    Button warning TODO
+  */ }
+  .button:not(:last-child) {
+    margin-right: 8px; }
+  .button.is-fullwidth {
+    width: 100%; }
+  .button.is-large {
+    font-size: 20px; }
+  .button.is-white {
+    background-color: white;
+    color: #333; }
+    .button.is-white:hover {
+      cursor: pointer;
+      background: #e6e6e6; }
+  .button.is-primary {
+    background-color: #FF7A5C; }
+    .button.is-primary:hover {
+      cursor: pointer;
+      background: #ff5029; }
+  .button.is-success {
+    background-color: #00C092; }
+    .button.is-success:hover {
+      cursor: pointer;
+      background: #008d6b; }
+  .button.is-light {
+    background-color: #E2F1F2;
+    color: #3E5460; }
+    .button.is-light:hover {
+      cursor: pointer;
+      background: #bfe0e2; }
+  .button.is-aqualight {
+    background-color: #E2F1F2;
+    color: #00C092; }
+    .button.is-aqualight:hover {
+      cursor: pointer;
+      background-color: #00C092;
+      color: white; }
+  .button.is-info {
+    background-color: #3297c2;
+    border-color: #287799; }
+    .button.is-info:hover {
+      cursor: pointer;
+      background: #287799; }
+  .button.is-danger {
+    background-color: #F4253B; }
+    .button.is-danger:hover {
+      cursor: pointer;
+      background: #db0b21; }
+  .button.is-warning {
+    background-color: #FBBB24; }
+    .button.is-warning:hover {
+      cursor: pointer;
+      background: #e8a404; }
+
+/*
+ Page specific styles, not to be used in component
+*/
+.buttons-page code {
+  float: right;
+  line-height: 42px; }
 
 .container {
   max-width: 1100px;
@@ -192,6 +387,7 @@ main {
     .row.is-large .column {
       padding: 24px; }
   .row .column {
+    display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
     padding: 16px;

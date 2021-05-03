@@ -15,3 +15,141 @@
         opacity: 0.7;
     }
 }
+.width--6r {
+    width: 100px;
+  }
+  .is-flex {
+    display: flex;
+  }
+  .has-background-grey-lighter {
+    background-color: $grey-lighter !important;
+  }
+  .tags {
+    display: flex;
+  }
+  
+  .tag {
+    padding: 8px;
+    &:not(.is-separator) {
+      border-radius: 8px;
+    }
+    height: 15px;
+    font-weight: 600;
+    &.is-primary {
+      background-color: $primary;
+      color: #fff;
+    }
+    &.is-aqualight {
+      color: $success;
+      background: #c9f7f4;
+    }
+    &.is-yellow {
+      background-color: $warning;
+      color: #000;
+    }
+    &.is-black {
+      background-color: $black;
+      color: $white;
+    }
+    &.is-separator {
+      padding-right: 10px;
+      overflow: hidden;
+      &:after {
+        content: " ";
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        right:  -15px;
+        top: 50%;
+        transform: translateY(-51%) rotate(45deg);
+        background-color: black;
+      }
+    }
+  }
+  
+  .has-background-white {
+    background-color: $white !important;
+  }
+  .icon {
+    display:inline-block;
+    padding: 8px;
+    border-radius: 8px;
+    i{
+      display:block;
+    }
+    &.is-hoverable{
+      cursor: pointer;
+      transition:.2s ease;
+    }
+    &.is-green {
+      color: $green;
+      background:$aqualight;
+      &.is-hoverable{
+        &:hover{
+          background: $green;
+          color:$aqualight;
+        }
+      }
+    }
+    &.is-red {
+      color: $red;
+      background:$quartz;
+      &.is-hoverable{
+        &:hover{
+          background: $red;
+          color:$quartz;
+        }
+      }
+    }
+    &.is-blue {
+      color: $blue;
+      background:$ivory;
+      &.is-hoverable{
+        &:hover{
+          background: $blue;
+          color:$ivory;
+        }
+      }
+    }
+  
+  }
+   
+  .has-text-uppercase {
+    text-transform: uppercase !important;
+  }
+  .has-text-grey {
+    color: $grey !important;
+  }
+  .has-text-black {
+    color: $black !important;
+  }
+  .has-text-green {
+    color: $green !important;
+  }
+  
+  .has-text-white {
+    color: $white !important;
+  }
+  
+  .has-text-size-1 {
+    font-size: $size-1 !important;
+  }
+  .has-text-size-2 {
+    font-size: $size-2 !important;
+  }
+  .has-text-size-3 {
+    font-size: $size-3 !important;
+  }
+  .has-text-size-4 {
+    font-size: $size-4 !important;
+  }
+  
+  .has-text-size-5 {
+    font-size: $size-5 !important;
+  }
+  .has-text-size-7 {
+    font-size: $size-6 !important;
+  }
+  .has-text-size-7 {
+    font-size: $size-7 !important;
+  }
